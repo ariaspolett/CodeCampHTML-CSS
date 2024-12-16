@@ -277,57 +277,328 @@ Yes
 Yes
 
 <!--QUESTION 20-->
+<!--Use the drop-down menus to select the answer choice that answers each question based on
+the information presented in the CSS style and markup.-->
+<style>
+  #style1 {
 
+            color: red;
+
+            font-size: 30px;
+
+  }
+  #style2 {
+
+            color: blue;
+
+            font-size: 40px;
+
+  }
+  #style3 {
+
+            color: green;
+
+            font-size: 20px;
+
+  }
+</style>
+
+You write the following HTML:
+
+01  <body style="color: purple; font-size: 10px;">
+02      <p id = "style1">Fasten your seat belt</p>
+03      <p>Look both ways before pulling out.</p>
+04      <p id= "style3" style= "color: red;">Watch your speed</p>
+05      <p style="color: green; font-size: 20px;">Be ready to stop</p>
+06      <p style="color: red;">Study the rules of the road</p>
+07      <p style="font-size: 30px;">You'll be driving in no time</p>
+08    </body> 
+
+Line 02 displays text in which color?
+red
+
+Line 02 displays text in which font size?
+pixels 30
+
+Line 03 displays text in which color?
+purple
 
 <!--QUESTION 21-->
+<!--For each of the following statements, select Yes if the statement is true. Otherwise, select No-->
 
+A CSS comment starts with /* and ends with */
+Yes
+
+Percent and EM are relative measurements and the size of each depends upon its parent.
+Yes
+
+Pixels are recommended units for specifying size.
+No
+
+The font-family attribute helps ensure maximum compatibility between web browsers.
+Yes
 
 <!--QUESTION 22-->
+<!--You are designing a website for Margie's Travel. The website uses external stylesheets.
+You need to create a style that centers all h1 elements on the page.
+How should you complete the code?-->
 
+h1 {
+text-align: center;
+}
 
 <!--QUESTION 23-->
+<!--You are building a website and want to have three main links called Home, Product Info, and Contact Us.
+You will create a hierarchy of page elements and revise the stylesheets.
+You want to apply a style to all elements in a document.
+Which type selector should you use?-->
 
+*
 
 <!--QUESTION 24-->
+<!--You are designing a website for City Power & Light.
+You write the following markup. Line numbers are included for reference only-->
+01  <! DOCTYPE html>
+02    <html>
+03      <head>
+04              <title>City Power & Light</title>
+05      </head>
+06      <body>
+07              <p>Welcome to City Power & Light. </p>
+08      </body>
+09    </html>
+<!--What style will be used to render the code?-->
 
+The browser default style will be used.
 
 <!--QUESTION 25-->
+<!--You want to complete the pseudo class for link elements so that the links appear red when the page loads,
+green when the link is clicked, orange when the cursor moves over the link, and blue if the link was clicked 
+previously. How should you complete the code? To answer, drag the appropriate CSS selector to the correct 
+locations. Each selector may be used once, more than once, or not at all.-->
 
+a : link {
+  color: red
+}
+
+a : visited {
+  color: blue
+}
+
+a : hover 
+{color: orange
+}
+
+a : active {
+  color: green
+}
 
 <!--QUESTION 26-->
+<!--You are creating a page on your personal website to display your family portrait.
+You need to make sure that browsers display the text Family Portrait before the photo is downloaded.
+How should you complete the markup? 
+* Markup segment may be used once, more than once, or not at all-->
 
+<img src= "portrait.png" alt=< "Family Portrait">
 
 <!--QUESTION 27-->
+<!--You are creating an HTML page that displays a how-to guide for a card game. You want to use the 
+browser's default style sheet. You need to display the following content: 
+How should you complete the markup?-->
 
+<h1> How to Play </h1>
+<p>
+  Disregard the jokers.
+  Then deal one card to each player until 
+  all the cards in the deck have been dealt.
+</p>
+<hr>
+<p>
+  The player to your right plays first
+</p>
 
 <!--QUESTION 28-->
+<!--You are creating an HTML document that displays a list of news articles.
+The list has the following requirements:
+  Each article must be its own semantic block.
+  Each article must have a headline.
+  Each article must have a section that contains its content.
+  For browsers that support the feature, the content must be hidden until the user clicks to reveal it.
+You need to create the markup for an article.-->
 
+<article>
+  <details>
+  <summary>
+    Article Headline
+  </summary>
+    <p>This is the article body</p>    
+  </details>
+</article>  
 
 <!--QUESTION 29-->
+<!--You are designing a webpage that is divided into several sections.
+Each section has a heading and a one-line quote.
+The following example shows the top section rendered by using the browser default styles:-->
 
+<div>
+  <h1>
+    Quote from Yesterday 
+  </h1>
+  <p>
+    Tomorrow is not promised 
+  </p>
+</div>
 
 <!--QUESTION 30-->
+<!--You are creating an HTML document that contains an essay with two sections.
+You need to make it easy for the user to navigate from the top of the document to section 1.
+How should you complete the markup?-->
 
+The markup defining the page should be:
+
+<a href="#Section2">Section 2</a>
+
+The markup defining the anchor for section 2 should be:
+
+<a id="Section2">Section2</a>
 
 <!--QUESTION 31-->
+<!--You are creating a web form to allow visitors to sign up for a mailing list.-->
 
+Which code segment will display the form element labeled A?  
+<input type= "checkbox" name= "subscribe" value="Yes">
+
+Which segment display the form element labeled B?   
+<input type="radio" name= "frequency" value= "daily" checked>
+
+Which segment will display the form element labeled C?   
+<input type= "submit" value= "Submit">
 
 <!--QUESTION 32-->
+<!--You need to create the following web page:
+Which five markup segments should you use to develop the solution? 
+To answer, arrange the markups in the correct order.-->
 
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+</nav>
+
+<article>
+  <h1>Our Mission</h1>
+  <p>
+    Northwind traders--your #1 source of Speciality food items and beverages
+  </p>
+</article>
+
+<article>
+  <figure>
+    <img src="Images/NorthwindLogo.gif" alt="Northwind Traders Logo" width="100" height="100">
+    <figcaption>Northwind Traders Logo</figcaption>
+    <p>
+      Northwind Traders
+    </p>
+  </figure>
+</article>
+
+<article>
+  <h1>Our Guarantee</h1>
+  <p>
+    Northwind Traders offers availability 24 Hours a day, 7 days a week, 365 days per year.
+  </p>
+</article>
+
+<footer>
+  <hr>
+  Copyright (c) Northwind Traders, 2017
+</footer>
 
 <!--QUESTION 33-->
+<!--you are creating an image link to the clients.html page. When the visitor clicks on the clients.gif graphic,
+the clients.html page must display in a new window. The graphic must provide text For screen readers and 
+display text while the page is loading.-->
 
+<a href= "clients.html" target="_blank">
+  <img src="clients.gif" alt= "Clients image">
+</a>
 
 <!--QUESTION 34-->
+<!--You are analyzing a form that sends multiline comments to another page on the Internet. 
+The following is the form's markup:-->
+< form action— "http://www.contoso.com/recievecoments.asp"
+  method— "post" >
+  Comments  :  <br>
+  <textarea id= "comments" >< / textarea >
+  <input type— "submit" value— "Submit" >
+< / form >
+<!--No data is sent when the form is submitted.
+You need to solve this problem so that the data in the text box is submitted.
+What should you do? -->
 
+Set the name attribute of the textarea element.
 
 <!--QUESTION 35-->
+<!--You are designing a webpage that tests a user's ability to remember a list of ordered items 
+in a particular category. The page must contain a header that displays the category and a list 
+of items in that category.
 
+Fruit -
+1. Apple
+2. Pear
+3. Orange
+
+This page will test your ability to remember the order of the preceding items.
+Glance at the list for 3 seconds. Then close your eyes and recite the items in the order listed.
+How should you complete the markup? To answer, select the appropriate markup segment in the answer area.-->
+
+<h1>Fruit</h1>
+<ol>
+  <li>Apple</li>
+  <li>Pear</li>
+  <li>Orange</li>
+</ol>
 
 <!--QUESTION 36-->
+<!--You are designing a website for Litware, Inc.
+A webpage must display the following list of numbered steps:
+1. Download.
+2. Install the update.
+3. Restart your computer.
+You need to create the necessary markup-->
 
+What is the correct opening tag for the list? 
+<ol>
+
+What is the correct tag for each item list?
+<li>
 
 <!--QUESTION 37-->
+<!--You are creating a website for a florist.
+The home page contains images of different types of flowers. When the user clicks on a flower, 
+another webpage will load that displays flowers of that type sold by the florist.
+The link for carnations must meet the following requirements:
+-> [1]
+-> When the image is clicked, the page carnations.html must load.
+How should you complete the markup? To answer, select the appropriate markup segments in the answer area.-->
 
+<a href= "carnations.html">
+  <img src= "carnation.png"/>
+</a>
 
 <!--QUESTION 38-->
+<!--For each of the following statements, select Yes if the statement is true. Otherwise, elect No.
+NOTE: Each correct selection is worth one point.-->
+
+A relative link requires that you use a protocol and server path 
+NO
+
+You can link to a document in a subdirectory of the current webpage by specifying only the subdirectory 
+name and the filename   
+YES
+
+You can use a relative link to reference images files from a repository on a different server   
+NO
+
+The following example of how you format an absolute link: https://www.contoso.com/products.html  
+YES
